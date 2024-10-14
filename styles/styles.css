@@ -1,3 +1,6 @@
+:root {
+    --text-align: center;
+}
 main {
     max-width: 840px;
 }
@@ -13,7 +16,7 @@ aside {
     padding: 1rem;
     background-color: #eee;
     color: #333;
-    text-align: center;
+    text-align: var(--text-align);
 }
 aside img {
     width: 200px;
@@ -33,7 +36,7 @@ p {padding: 0;}
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
-    text-align: center;
+    text-align: var(--text-align);
 }
 
 nav {
