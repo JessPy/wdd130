@@ -3,7 +3,7 @@ main {
 }
 
 h1 {
-    color: lightskyblue;
+    color: steelblue;
 }
 
 aside {
@@ -19,6 +19,7 @@ aside img {
     width: 200px;
     height: auto;
 }
+
 main img{
     width: 150px;
     height: auto;
@@ -35,9 +36,17 @@ footer {
     text-align: center;
 }
 
-nav a {
+nav {
     background-color: steelblue;
+}
+
+nav a {
     color: white;
     padding: 10px;
     display: block;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
