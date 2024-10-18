@@ -1,0 +1,62 @@
+:root {
+    --tecto-align: center;
+    --heading-font: 'Montserrat';
+    --text-font: Montserrat;
+    --primary-color: #264969;
+    --secondary-color: #52668E ;
+    --accent1-color: #5E9771;
+    --accent2-color: #FBFAF8 ;
+    
+
+}
+
+header {
+    background-color: white;
+    align-items: center;
+}
+
+nav a {
+    display: inline-block;
+    font-family:  var(--text-font);
+    color: var(--primary-color);
+    font-size: 1.5rem;
+
+}
+nav
+.sociallinks a {
+    text-decoration: none;
+
+}
+
+p {
+    font-family: var(--font-family);
+}
+
+h2 {
+    font-family: var(--font-family);
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    font-family: var(--font-family);
+    font-size: 7rem;
+    color: var(--accent2-color);
+    position: absolute;
+    top: 250px;
+    left: 650px;
+}
+
+.hero article img {
+    position: absolute;
+    display: inline-block;
+}
+
