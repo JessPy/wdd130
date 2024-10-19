@@ -1,76 +1,162 @@
 :root {
     --tecto-align: center;
-    --heading-font: 'Montserrat';
+    --heading-font: Montserrat;
     --text-font: Montserrat;
     --primary-color: #264969;
     --secondary-color: #52668E ;
-    --accent1-color: #5E9771;
+    --accent1-color: rgb(82, 102, 142);
     --accent2-color: #FBFAF8 ;
 }
+
 * {
     font-family: var(--text-font);
 }
-header {
-    background-color: white;
+
+/* ============= Header ================*/
+.flex-site {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+
+.flex-site img {
+    height: 9rem;
+    padding: 0 10% 0 0;
+}
+
+.grid-box-site {
+    display: grid; 
+    grid-template-columns: repeat(4,min(10rem));
+    align-items: center;
+    padding: 0 0 0 1%;
+}
+
+.grid-box-site-item {
+    border: 1px solid black;
+    padding: 7px;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+/* ============= Hero Section ================*/
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-nav a {
-    font-family: var(--text-font);
-    color: var(--primary-color);
-    font-size: 1.5rem;
-
-}
-nav img {
-    display: block;
-}
-.sociallinks a {
-    text-decoration: none;
-}
-
-p {
-    font-family: var(--font-family);
-}
-
-h2 {
-    font-family: var(--font-family);
-}
-
-.hero {
-    position: relative;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
+#hero-img {
+    width: 90%;
     height: auto;
 }
 
 .hero h1 {
-    font-family: var(--font-family);
-    font-size: 7rem;
+    font-family: var(--heading-font);
     color: var(--accent2-color);
+    font-size: 5rem;
     position: absolute;
-    top: 250px;
-    left: 650px;
+    top: 1px;
+    left: 29%;
+    z-index: 1;
 }
+
 .hero article {
-    border: 1px solid black;
+    width: 70%;
     position: absolute;
     top: 250px;
-    left: 120px;
+    left: 180px;
+    display: flex;
+    background-color: rgba(82,102,142, 0.75);
+    padding: 0 5% 0 0%;
 }
 
 .hero article img {
     width: 25%;
-    float: right;
-    padding: 10px solid black;
-
+    order: 1;
+    padding: 4%;
 }
- .hero article p {
+
+.hero article p {
+    align-content: center;
     text-align: center;
     width: 80rem;
     height: 300px;
-    background-color: var(--secondary-color);
+    padding: 0 5% 0 5%;
     color: black;
-     }
+}
+
+/* ============= History Section ================*/
+.flex-history {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-history p {
+    padding: 10px;
+}
+
+.flex-history-item {
+    align-content: center;
+}
+
+.grid-history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-history img {
+    width: 300px;
+    padding: 10px;
+}
+
+/* ============= Image Gallery ================*/
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;  /* Permite que as imagens se movam para a linha seguinte se não houver espaço */
+    justify-content: space-between; /* Distribui o espaço restante entre as figuras */
+    gap: 20px; /* Adiciona um espaço entre as figuras */
+}
+
+.image-gallery figure {
+    flex: 1; /* Faz cada figura ocupar o mesmo espaço */
+    max-width: calc(20% - 20px); /* Limita a largura máxima das figuras */
+    margin: 10px; /* Adiciona um espaço ao redor de cada figura */
+}
+.image-gallery h2 {
+    flex-basis: 0;
+}
+.image-gallery img {
+    width: 100%; /* Faz as imagens ocuparem a largura total do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.h2 {
+    text-align: center  ;
+}
+/* ============= Footer ================*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color:var(--accent2-color);
+}
+
+.sociallinks {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sociallinks a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: var(--accent2-color);
+
+}
