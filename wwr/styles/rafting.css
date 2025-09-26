@@ -33,6 +33,11 @@ nav, p, section, article {
   padding: 8px;
 }
 
+nav img {
+    width: 35px;
+    height: auto;
+    vertical-align: middle;
+}
 .socialmedia a {
   text-decoration: none;
 }
@@ -73,3 +78,6 @@ nav, p, section, article {
   width: 125px;
   margin-left: 10px;
 }
+ p {
+    color: black;
+ }
