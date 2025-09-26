@@ -1,5 +1,15 @@
+:root {
+    --heading-background-color: #f06;
+    --heading-text-color: white;
+    --heading-font: 'Arial Black', sans-serif;
+    --nav-bg-color: darkblue;
+    --nav-text-color: white;
+    --aside-bg-color: rgb(245, 233, 215);
+    --aside-text-color: black;
+    --footer-text-color: gray;
+}
 nav {
-    background-color: darkblue;
+    background-color: var(--nav-bg-color);
     padding: 10px; /* Espaçamento interno */
 }
 
